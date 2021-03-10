@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru" class="page-contacts">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Моневак</title>
-  <link rel="stylesheet prefetch"
-    href="https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="page-contacts__body">
   <header class="page-contacts__header header">
     <div class="header__top header-top">
@@ -62,7 +64,7 @@
           ОКПО: 67354285
           ОКАТО: 18401000000
           ОГРН: 1103461002480
-          Код по ОКВЭД: 51.70 
+          Код по ОКВЭД: 51.70
         </p>
         <p class="requisites__info">
           Банк: Филиала «Ростовский» ОАО «Альфа-Банк» г Ростов на Дону
@@ -75,27 +77,146 @@
           Почтовый адрес: 400080, Волгоградская обл. г. Волгоградъ ул. Командира Рудь, 14А, офис 13
         </p>
       </div>
-      <div class="">
-        <p>Остались вопросы?</p>
-        <form action="#">
-          <label for="">
-            <input type="text" placeholder="Ваше имя">
-          </label>
-          <label for="">
-            <input type="text" placeholder="Ваш телефон">
-          </label>
-          <label for="">
-            <textarea name="message" id="message" rows="5" placeholder="Ваше имя"></textarea>
+    </section>
+    <section class="main-feedback">
+      <h2>Обратная связь</h2>
+      <p>Остались вопросы?</p>
+      <form class="main-feedbac__form form" action="#">
+        <label for="name">
+          <input type="text" placeholder="Ваше имя" id="name">
+        </label>
+        <label for="phone">
+          <input type="text" placeholder="Ваш телефон" id="phone">
+        </label>
+        <label for="message">
+          <textarea name="message" id="message" rows="5" placeholder="Ваше имя"></textarea>
         </label>
         <input type="checkbox" id="checkbox">
         <label for="checkbox">Я подтверждаю свое согласие с политикой
           в отношении обработки персональных данных
         </label>
-        <button class="" type="submit">Задать вопрос</button>
+        <button class="form__button" type="submit">Задать вопрос</button>
       </form>
-      </div>
-    </section>
+      <section class="map">
+        <h2 class="visually-hidden">Карта офисов</h2>
+        <div>
+          <img src="img/map-mobil.png" alt="">
+        </div>
+      </section>
+      <section class="addresses">
+        <h2 class="visally-hidden">Адреса офисов</h2>
+        <ul>
+          <li>
+            <h3>МОСКВА</h3>
+            <a href="tel:+74991361718">+7 (499) 136-17-18</a>
+            <a href="tel:+79034679851">+7 (903) 467-98-51</a>
+            <p>115114, ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро "Павелецкая")</p>
+            <a href="#">Проложить маршрут</a>
+            <p></p>
+          </li>
+          <li>
+            <h3>Волгоград</h3>
+            <a href="tel:+74991361718">+7 (499) 136-17-18</a>
+            <a href="tel:+79034679851">+7 (903) 467-98-51</a>
+            <p>115114, ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро "Павелецкая")</p>
+            <a href="#">Проложить маршрут</a>
+            <p>Режим работы: c 10:00 до 18:00</p>
+          </li>
+          <li>
+            <h3>КРАСНОДАР</h3>
+            <a href="tel:+74991361718">+7 (499) 136-17-18</a>
+            <a href="tel:+79034679851">+7 (903) 467-98-51</a>
+            <p>115114, ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро "Павелецкая")</p>
+            <a href="#">Проложить маршрут</a>
+            <p>Режим работы: c 10:00 до 18:00</p>
+          </li>
+          <li>
+            <h3>воронеж</h3>
+            <a href="tel:+74991361718">+7 (499) 136-17-18</a>
+            <a href="tel:+79034679851">+7 (903) 467-98-51</a>
+            <p>115114, ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро "Павелецкая")</p>
+            <a href="#">Проложить маршрут</a>
+            <p>Режим работы: c 10:00 до 18:00</p>
+          </li>
+          <li>
+            <h3>ЕРЕВАН</h3>
+            <a href="tel:+74991361718">+7 (499) 136-17-18</a>
+            <a href="tel:+79034679851">+7 (903) 467-98-51</a>
+            <p>115114, ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро "Павелецкая")</p>
+            <a href="#">Проложить маршрут</a>
+            <p>Режим работы: c 10:00 до 18:00</p>
+          </li>
+          <li>
+            <h3>НОВОСИБИРСК</h3>
+            <a href="tel:+73832062461">+7 (383) 206-24-61;</a>
+            <a href="tel:+73832062711">+7 (383) 206-27-11</a>
+            <a href="tel:+79034679851">+7 (903) 467-98-51</a>
+            <p>Факс: +7 (383) 20-62-209;
+            +7 (383) 20-62-210</p>
+            <p>115114, ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро "Павелецкая")</p>
+            <a href="#">Проложить маршрут</a>
+            <p>Режим работы: c 10:00 до 18:00</p>
+          </li>
+        </ul>
+      </section>
   </main>
-  <footer></footer>
+  <footer class="footer">
+    <section class="footer__nav footer-nav">
+      <h2 class="visally-hidden">навигация по сайту</h2>
+      <ul class="footer-nav__catalog">
+        <li>
+          <a href="#">Упаковочное оборудование</a>
+        </li>
+        <li>
+          <a href="#">Пленки</a>
+        </li>
+        <li>
+          <a href="#">Пакеты</a>
+        </li>
+        <li>
+          <a href="#">Прочие материалы</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#">О Компанииc</a>
+        </li>
+        <li>
+          <a href="#">Партнеры</a>
+        </li>
+        <li>
+          <a href="#">Доставка</a>
+        </li>
+        <li>
+          <a href="#">Оплата</a>
+        </li>
+        <li>
+          <a href="#">Обмен и возврат</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+        <li>
+          <a href="#">Распродажа</a>
+        </li>
+        <li>
+          <a href="#">Сервис</a>
+        </li>
+        <li>
+          <a href="#">Новости</a>
+        </li>
+      </ul>
+    </section>
+    <section class="footer__contacts">
+      <h2 class="visally-hidden">Реквизиты</h2>
+      <a href="tel:+74991361718">+7 (499) 136-17-18</a>
+      <a href="tel:+79034679851 ">+7 (903) 467-98-51 </a>
+      <a href="#" type="button">Обратный звонок</a>
+      <a href="info@monevac.ru">info@monevac.ru</a>
+      <p>Москва ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро "Павелецкая")</p>
+      <p>© Моневак 2020 | Все права защищены</p>
+    </section>
+  </footer>
 </body>
+
 </html>
