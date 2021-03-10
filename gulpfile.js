@@ -12,26 +12,26 @@ const del = require("del");
 const sync = require("browser-sync").create();
 
 // Style
-/*
+
 const styles = () => {
-  return src("source/sass/style/scss")
+  return src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
-    .pipe(rename(style.css))
-    .pipe(dest("build.css"))
+    .pipe(rename("style.css"))
+    .pipe(dest("build/css"))
     .pipe(postcss([
       autoprefixer(),
       csso()
     ]))
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(dest(build / css))
-    .pipe(sync.stream())
+    .pipe(dest("build/css"))
+    .pipe(sync.stream());
 }
 
 exports.styles = styles;
-*/
+
 // HTML
 
 const html = () => {
@@ -119,7 +119,7 @@ const reload = done => {
 // Watcher
 
 const watcher = () => {
-  //watch("source/sass/**/*.scss", series(styles));
+  watch("source/sass/**/*.scss", series(styles));
   //watch("source/js/script.js", series(scripts));
   watch("source/*.html", series(html, reload));
 }
@@ -129,7 +129,7 @@ const watcher = () => {
 const build = series(
   clean,
   parallel(
-    //styles,
+    styles,
     html,
     //scripts,
     copy,
@@ -143,7 +143,7 @@ exports.build = build;
 exports.default = series(
   clean,
   parallel(
-    //styles,
+    styles,
     html,
     //scripts,
     copy

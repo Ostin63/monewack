@@ -1,0 +1,23 @@
+:root {
+  --white: #ffffff;
+  --gray-ligth: #F5F5F5;
+  --gray: #797986;
+  --black: #222225;
+  --black-ligth: #2A2A2E;
+  --text-black: #262633;
+  --text-red: #BF2738;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 962px;
+
+$font-graphik: "Graphik", "Arial", sans-serif;
+$font-golos: "Golos", "Arial", sans-serif;
+$font-akzidenzGrotesk: "AkzidenzGrotesk", "Arial", sans-serif;
