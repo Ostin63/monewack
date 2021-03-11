@@ -1,7 +1,9 @@
 :root {
   --white: #ffffff;
+  --white-80: rgba(255, 255, 255, 0.8);
   --gray-ligth: #F5F5F5;
-  --gray: #797986;
+  --gray: #C9C9CF;
+  --gray-dark: #797986;
   --black: #222225;
   --black-ligth: #2A2A2E;
   --text-black: #262633;
@@ -21,3 +23,4 @@ $desktop-width: 962px;
 $font-graphik: "Graphik", "Arial", sans-serif;
 $font-golos: "Golos", "Arial", sans-serif;
 $font-akzidenzGrotesk: "AkzidenzGrotesk", "Arial", sans-serif;
+$font-roadradio: "RoadRadio", "Arial", sans-serif;

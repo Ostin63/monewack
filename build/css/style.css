@@ -321,6 +321,12 @@ template {
   font-weight: 400;
   font-style: normal; }
 
+@font-face {
+  font-family: "RoadRadio";
+  src: url("../fonts/RoadRadio.woff2") format("woff2"), url("../fonts/RoadRadio.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -337,8 +343,10 @@ input[type="radio"].visually-hidden {
 
 :root {
   --white: #ffffff;
+  --white-80: rgba(255, 255, 255, 0.8);
   --gray-ligth: #F5F5F5;
-  --gray: #797986;
+  --gray: #C9C9CF;
+  --gray-dark: #797986;
   --black: #222225;
   --black-ligth: #2A2A2E;
   --text-black: #262633;
@@ -353,14 +361,20 @@ input[type="radio"].visually-hidden {
   color: var(--white); }
 
 .header-top {
+  padding-top: 18px;
+  padding-bottom: 17px;
   display: grid;
   grid-template-columns: 55px 1fr 47px 58px; }
 
 .header-top__button {
+  width: 23px;
+  height: 8px;
   border: none;
   padding-left: 16px;
   padding-right: 16px;
   background: url("../img/menu.svg") 50% 50% no-repeat;
+  justify-self: center;
+  align-self: center;
   box-sizing: border-box; }
 
 .header-top__nav {
@@ -377,18 +391,75 @@ input[type="radio"].visually-hidden {
   font-family: "Golos", "Arial", sans-serif; }
 
 .header-top__logo {
+  width: 90px;
+  height: 30px;
   justify-self: end; }
 
 .header-top__compare {
-  justify-self: end; }
+  justify-self: end;
+  align-self: center; }
 
 .search {
-  padding-block: 16px; }
+  position: relative;
+  width: 16px;
+  height: 18px;
+  justify-self: center;
+  align-self: center; }
+
+.search__text {
+  position: absolute;
+  top: -3px;
+  right: 20px;
+  background: var(--white-80);
+  display: none;
+  z-index: 10; }
+  .search__text :hover {
+    display: block; }
 
 .search__icon-lens {
+  display: block;
   width: 16px;
   height: 18px;
   background: url("../img/search.svg") 50% 50% no-repeat; }
+  .search__icon-lens:hover + .search__text {
+    display: block; }
 
-.search__text {
-  width: 0; }
+.nav-site {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: var(--gray-ligth);
+  display: grid;
+  grid-template-columns: 1fr min-content min-content 1fr;
+  column-gap: 30px; }
+
+.nav-site__item {
+  margin-block: 16px;
+  color: var(--text-black); }
+  .nav-site__item a {
+    display: block;
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: "Golos", "Arial", sans-serif; }
+  .nav-site__item.active {
+    color: var(--gray); }
+
+.nav-main {
+  grid-column: 2 / 3; }
+
+.nav-contacts {
+  grid-column: 3 / 4; }
+
+.main-contacts__title {
+  margin: 0;
+  padding-block: 20px;
+  text-align: center;
+  background: var(--gray-ligth);
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 120%;
+  font-family: "RoadRadio", "Arial", sans-serif; }
