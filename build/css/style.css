@@ -349,8 +349,12 @@ input[type="radio"].visually-hidden {
   --gray-dark: #797986;
   --black: #222225;
   --black-ligth: #2A2A2E;
+  --text-gray: #808080;
   --text-black: #262633;
-  --text-red: #BF2738; }
+  --text-red: #BF2738;
+  --text-red-hover: #db283d;
+  --text-red-active: #8f1926;
+  --color-black: #212121; }
 
 *,
 *::before,
@@ -463,3 +467,121 @@ input[type="radio"].visually-hidden {
   font-size: 22px;
   line-height: 120%;
   font-family: "RoadRadio", "Arial", sans-serif; }
+
+.main-contacts__requisites {
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 18px; }
+
+.requisites__phone {
+  display: block;
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 120%;
+  font-family: "RoadRadio", "Arial", sans-serif;
+  color: var(--text-black); }
+
+.requisites__mail {
+  display: block;
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 30px;
+  font-family: "Golos", "Arial", sans-serif;
+  color: var(--text-red); }
+
+.requisites__text {
+  margin-top: 19px;
+  font-weight: normal;
+  font-family: "Golos", "Arial", sans-serif;
+  color: var(--text-gray); }
+  .requisites__text--name {
+    color: var(--text-black); }
+
+.main-feedback {
+  padding-top: 54px;
+  padding-left: 16px;
+  padding-right: 14px;
+  background: var(--white); }
+
+.main-feedback__title {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 120%;
+  font-family: "RoadRadio", "Arial", sans-serif;
+  color: var(--color-black); }
+
+.main-feedbac__form input,
+.main-feedbac__form textarea {
+  width: 100%;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  background: var(--gray-ligth);
+  border-radius: 14px;
+  border: none; }
+  .main-feedbac__form input::placeholder,
+  .main-feedbac__form textarea::placeholder {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    font-family: "Golos", "Arial", sans-serif; }
+
+.main-feedbac__form textarea {
+  padding-bottom: 23px; }
+
+.form__checkbox {
+  margin-top: 11px;
+  margin-bottom: 21px;
+  padding-left: 36px; }
+  .form__checkbox label {
+    position: relative;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 120%;
+    font-family: "Golos", "Arial", sans-serif;
+    color: var(--text-gray); }
+    .form__checkbox label b {
+      color: var(--color-black); }
+    .form__checkbox label::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: -36px;
+      width: 20px;
+      height: 20px;
+      background: var(--gray-ligth);
+      border-radius: 4px;
+      box-sizing: border-box; }
+  .form__checkbox input:checked + label::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -36px;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background: url("../img/check.svg") 50% 50% no-repeat;
+    background-color: var(--gray-ligth); }
+
+.form__button {
+  width: 190px;
+  height: 52px;
+  border: none;
+  border-radius: 14px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "RoadRadio", "Arial", sans-serif;
+  background: var(--text-red);
+  color: var(--white); }
+  .form__button:hover {
+    background: var(--text-red-hover); }
+  .form__button:active {
+    background: var(--text-red-active); }

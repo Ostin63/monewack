@@ -6,8 +6,12 @@
   --gray-dark: #797986;
   --black: #222225;
   --black-ligth: #2A2A2E;
+  --text-gray: #808080;
   --text-black: #262633;
   --text-red: #BF2738;
+  --text-red-hover: #db283d;
+  --text-red-active: #8f1926;
+  --color-black: #212121;
 }
 
 *,
@@ -20,7 +24,15 @@ $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 962px;
 
-$font-graphik: "Graphik", "Arial", sans-serif;
-$font-golos: "Golos", "Arial", sans-serif;
-$font-akzidenzGrotesk: "AkzidenzGrotesk", "Arial", sans-serif;
-$font-roadradio: "RoadRadio", "Arial", sans-serif;
+$font-graphik: "Graphik",
+"Arial",
+sans-serif;
+$font-golos: "Golos",
+"Arial",
+sans-serif;
+$font-akzidenzGrotesk: "AkzidenzGrotesk",
+"Arial",
+sans-serif;
+$font-roadradio: "RoadRadio",
+"Arial",
+sans-serif;

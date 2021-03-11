@@ -8,3 +8,38 @@
   line-height: 120%;
   font-family: $font-roadradio;
 }
+
+.main-contacts__requisites {
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 18px;
+}
+
+.requisites__phone {
+  @include link;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 120%;
+  font-family: $font-roadradio;
+  color: var(--text-black);
+}
+
+.requisites__mail {
+  @include link;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 30px;
+  font-family: $font-golos;
+  color: var(--text-red);
+}
+
+.requisites__text {
+  margin-top: 19px;
+  font-weight: normal;
+  font-family: $font-golos;
+  color: var(--text-gray);
+
+  &--name {
+    color: var(--text-black);
+  }
+}

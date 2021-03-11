@@ -1,0 +1,104 @@
+.main-feedback {
+  padding-top: 54px;
+  padding-left: 16px;
+  padding-right: 14px;
+  background: var(--white);
+}
+
+.main-feedback__title {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 120%;
+  font-family: $font-roadradio;
+  color: var(--color-black);
+}
+
+.main-feedbac__form {
+
+  input,
+  textarea {
+    width: 100%;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    background: var(--gray-ligth);
+    border-radius: 14px;
+    border: none;
+
+    &::placeholder {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+      font-family: $font-golos;
+    }
+  }
+
+  textarea {
+    padding-bottom: 23px;
+  }
+}
+
+.form__checkbox {
+  margin-top: 11px;
+  margin-bottom: 21px;
+  padding-left: 36px;
+
+  label {
+    position: relative;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 120%;
+    font-family: $font-golos;
+    color: var(--text-gray);
+
+    b {
+      color: var(--color-black);
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: -36px;
+      width: 20px;
+      height: 20px;
+      background: var(--gray-ligth);
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+  }
+
+  input:checked+label::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -36px;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background: url("../img/check.svg") 50% 50% no-repeat;
+    background-color: var(--gray-ligth);
+  }
+}
+
+.form__button {
+  width: 190px;
+  height: 52px;
+  border: none;
+  border-radius: 14px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: $font-roadradio;
+  background: var(--text-red);
+  color: var(--white);
+
+  &:hover {
+    background: var(--text-red-hover);
+  }
+
+  &:active {
+    background: var(--text-red-active);
+  }
+}

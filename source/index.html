@@ -54,11 +54,12 @@
       <h2 class="main-contacts__title">Контакты</h2>
       <div class="main-contacts__requisites requisites">
         <a class="requisites__phone" href="tel:+79034679851">8 (903) 467 98 51</a>
-        <p class="requisites__name">
+        <a class="requisites__mail" href="mailto:info@monevac.ru">info@monevac.ru</a>
+        <p class="requisites__text--name">
           Полное наименование: Общество с ограниченной ответственностью «МОНЕВАК» Сокращенное наименование: ООО
           «МОНЕВАК»
         </p>
-        <p class="requisites__info">
+        <p class="requisites__text">
           ИНН: 3448050610
           КПП: 344801001
           ОКПО: 67354285
@@ -66,21 +67,21 @@
           ОГРН: 1103461002480
           Код по ОКВЭД: 51.70
         </p>
-        <p class="requisites__info">
+        <p class="requisites__text">
           Банк: Филиала «Ростовский» ОАО «Альфа-Банк» г Ростов на Дону
           БИК: 046015207
           к/с: 30101810500000000207
           р/с: 40702810926090000003
         </p>
-        <p class="requisites__info">
+        <p class="requisites__text">
           Юридический адрес: 400080, Волгоградская обл. г. Волгоград ул. Командира Рудь,14А, офис 13
           Почтовый адрес: 400080, Волгоградская обл. г. Волгоградъ ул. Командира Рудь, 14А, офис 13
         </p>
       </div>
     </section>
     <section class="main-feedback">
-      <h2>Обратная связь</h2>
-      <p>Остались вопросы?</p>
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <p class="main-feedback__title">Остались вопросы?</p>
       <form class="main-feedbac__form form" action="#">
         <label for="name">
           <input type="text" placeholder="Ваше имя" id="name">
@@ -89,12 +90,13 @@
           <input type="text" placeholder="Ваш телефон" id="phone">
         </label>
         <label for="message">
-          <textarea name="message" id="message" rows="5" placeholder="Ваше имя"></textarea>
+          <textarea name="message" id="message" rows="7" placeholder="Ваше имя"></textarea>
         </label>
-        <input type="checkbox" id="checkbox">
-        <label for="checkbox">Я подтверждаю свое согласие с политикой
-          в отношении <b>обработки персональных данных</b>
-        </label>
+        <div class="form__checkbox">
+          <input class="visually-hidden" type="checkbox" id="checkbox">
+          <label for="checkbox">Я подтверждаю свое согласие с политикой
+            в отношении <b>обработки персональных данных</b></label>
+        </div>
         <button class="form__button" type="submit">Задать вопрос</button>
       </form>
       <section class="map">
@@ -152,7 +154,7 @@
             <a href="tel:+73832062711">+7 (383) 206-27-11</a>
             <a href="tel:+79034679851">+7 (903) 467-98-51</a>
             <p>Факс: +7 (383) 20-62-209;
-            +7 (383) 20-62-210</p>
+              +7 (383) 20-62-210</p>
             <p>115114, ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро "Павелецкая")</p>
             <a href="#">Проложить маршрут</a>
             <p>Режим работы: c 10:00 до 18:00</p>
@@ -212,7 +214,7 @@
       <a href="tel:+74991361718">+7 (499) 136-17-18</a>
       <a href="tel:+79034679851 ">+7 (903) 467-98-51 </a>
       <a href="#" type="button">Обратный звонок</a>
-      <a href="info@monevac.ru">info@monevac.ru</a>
+      <a href="mailto:info@monevac.ru">info@monevac.ru</a>
       <p>Москва ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро "Павелецкая")</p>
       <p>© Моневак 2020 | Все права защищены</p>
     </section>
