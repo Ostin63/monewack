@@ -382,7 +382,7 @@ input[type="radio"].visually-hidden {
   padding-top: 18px;
   padding-bottom: 17px;
   display: grid;
-  grid-template-columns: 55px 1fr 47px 58px; }
+  grid-template-columns: 55px 47px 1fr 47px 58px; }
 
 .header-top__button {
   width: 23px;
@@ -398,8 +398,9 @@ input[type="radio"].visually-hidden {
 .header-top__nav {
   margin: 0;
   padding: 0;
-  list-style: none;
-  display: none; }
+  list-style: none; }
+  .header-top__nav li {
+    display: none; }
 
 .header-nav__link {
   font-style: normal;
@@ -411,7 +412,7 @@ input[type="radio"].visually-hidden {
 .header-top__logo {
   width: 90px;
   height: 30px;
-  justify-self: end; }
+  justify-self: center; }
 
 .header-top__compare {
   justify-self: end;

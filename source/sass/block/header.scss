@@ -6,7 +6,7 @@
   padding-top: 18px;
   padding-bottom: 17px;
   display: grid;
-  grid-template-columns: 55px 1fr 47px 58px;
+  grid-template-columns: 55px 47px 1fr 47px 58px;
 }
 
 .header-top__button {
@@ -23,7 +23,10 @@
 
 .header-top__nav {
   @include list-style;
-  display: none;
+
+  li {
+    display: none;
+  }
 }
 
 .header-nav__link {
@@ -37,7 +40,7 @@
 .header-top__logo {
   width: 90px;
   height: 30px;
-  justify-self: end;
+  justify-self: center;
 }
 
 .header-top__compare {
