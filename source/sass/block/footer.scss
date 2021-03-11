@@ -1,0 +1,112 @@
+.footer-nav {
+  padding-top: 40px;
+  padding-left: 15px;
+  padding-right: 32px;
+  padding-bottom: 40px;
+  background: var(--black);
+}
+
+.footer-catalog {
+  @include list-style;
+}
+
+.footer-catalog__item {
+  color: var(--white);
+
+  a {
+    @include link;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 170%;
+    font-family: $font-inter;
+  }
+
+  &.active {
+    color: var(--text-red);
+  }
+}
+
+.footer-nav__site {
+  @include list-style;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-nav-site__item {
+  color: var(--gray-dark);
+
+  a {
+    @include link;
+    font-size: 16px;
+    line-height: 180%;
+    font-family: $font-akzidenzGrotesk;
+  }
+}
+
+.footer__contacts {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-inline: 15px;
+  background: var(--black-ligth);
+  color: var(--white);
+}
+
+.footer-contacts__phone {
+  @include link;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 150%;
+  font-family: $font-golosmedium;
+}
+
+.footer-contacts__button {
+  width: 190px;
+  height: 52px;
+  @include link;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-block: 16px;
+  text-align: center;
+  border-radius: 14px;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: $font-roadradio;
+  border: 2px solid var(--gray-dark);
+  box-sizing: border-box;
+
+  &:hover {
+    background: var(--black);
+  }
+
+  &:active {
+    background: var(--text-red-active);
+  }
+}
+
+.footer-contacts__mail {
+  @include link;
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 110%;
+  font-family: $font-akzidenzGroteskmd;
+  color: var(--color-mail);
+}
+
+.footer-contacts__adress {
+  margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 130%;
+  font-family: $font-inter;
+}
+
+.footer-contacts__copyright {
+  padding-top: 20px;
+  border-top: 1px solid var(--white-5);
+  font-size: 13px;
+  line-height: 110%;
+  font-family: $font-akzidenzGrotesk;
+  color: var(--gray-dark);
+}

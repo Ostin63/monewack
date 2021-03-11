@@ -17,11 +17,29 @@
 }
 
 @font-face {
+  font-family: "Golosmedium";
+  src:
+    url("../fonts/Golostextmedium.woff2") format("woff2"),
+    url("../fonts/Golostextmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "AkzidenzGrotesk";
   src:
     url("../fonts/AkzidenzGroteskProRegular.woff2") format("woff2"),
     url("../fonts/AkzidenzGroteskProRegular.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AkzidenzGroteskMd";
+  src:
+    url("../fonts/AkzidenzGroteskPro-Md.woff2") format("woff2"),
+    url("../fonts/AkzidenzGroteskPro-Md.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }
 

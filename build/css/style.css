@@ -316,9 +316,21 @@ template {
   font-style: normal; }
 
 @font-face {
+  font-family: "Golosmedium";
+  src: url("../fonts/Golostextmedium.woff2") format("woff2"), url("../fonts/Golostextmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
   font-family: "AkzidenzGrotesk";
   src: url("../fonts/AkzidenzGroteskProRegular.woff2") format("woff2"), url("../fonts/AkzidenzGroteskProRegular.woff") format("woff");
   font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "AkzidenzGroteskMd";
+  src: url("../fonts/AkzidenzGroteskPro-Md.woff2") format("woff2"), url("../fonts/AkzidenzGroteskPro-Md.woff") format("woff");
+  font-weight: 500;
   font-style: normal; }
 
 @font-face {
@@ -344,6 +356,7 @@ input[type="radio"].visually-hidden {
 :root {
   --white: #ffffff;
   --white-80: rgba(255, 255, 255, 0.8);
+  --white-5: rgba(255, 255, 255, 0.05);
   --gray-ligth: #F5F5F5;
   --gray: #C9C9CF;
   --gray-dark: #797986;
@@ -352,6 +365,7 @@ input[type="radio"].visually-hidden {
   --text-gray: #808080;
   --text-black: #262633;
   --text-red: #BF2738;
+  --color-mail: #F23147;
   --text-red-hover: #db283d;
   --text-red-active: #8f1926;
   --color-black: #212121; }
@@ -642,3 +656,114 @@ input[type="radio"].visually-hidden {
     color: var(--text-red-hover); }
   .list-item__link-button:active {
     color: var(--text-red-active); }
+
+.footer-nav {
+  padding-top: 40px;
+  padding-left: 15px;
+  padding-right: 32px;
+  padding-bottom: 40px;
+  background: var(--black); }
+
+.footer-catalog {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.footer-catalog__item {
+  color: var(--white); }
+  .footer-catalog__item a {
+    display: block;
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 170%;
+    font-family: "Inter", "Arial", sans-serif; }
+  .footer-catalog__item.active {
+    color: var(--text-red); }
+
+.footer-nav__site {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.footer-nav-site__item {
+  color: var(--gray-dark); }
+  .footer-nav-site__item a {
+    display: block;
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+    line-height: 180%;
+    font-family: "AkzidenzGrotesk", "Arial", sans-serif; }
+
+.footer__contacts {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-inline: 15px;
+  background: var(--black-ligth);
+  color: var(--white); }
+
+.footer-contacts__phone {
+  display: block;
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 150%;
+  font-family: "Golosmedium", "Arial", sans-serif; }
+
+.footer-contacts__button {
+  width: 190px;
+  height: 52px;
+  display: block;
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-block: 16px;
+  text-align: center;
+  border-radius: 14px;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "RoadRadio", "Arial", sans-serif;
+  border: 2px solid var(--gray-dark);
+  box-sizing: border-box; }
+  .footer-contacts__button:hover {
+    background: var(--black); }
+  .footer-contacts__button:active {
+    background: var(--text-red-active); }
+
+.footer-contacts__mail {
+  display: block;
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 110%;
+  font-family: "AkzidenzGroteskMd", "Arial", sans-serif;
+  color: var(--color-mail); }
+
+.footer-contacts__adress {
+  margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 130%;
+  font-family: "Inter", "Arial", sans-serif; }
+
+.footer-contacts__copyright {
+  padding-top: 20px;
+  border-top: 1px solid var(--white-5);
+  font-size: 13px;
+  line-height: 110%;
+  font-family: "AkzidenzGrotesk", "Arial", sans-serif;
+  color: var(--gray-dark); }
