@@ -1,0 +1,56 @@
+.addresses {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  padding-left: 17px;
+  padding-right: 15px;
+  background: var(--white);
+}
+
+.addresses__list {
+  @include list-style;
+}
+
+.list-item {
+  margin-bottom: 10px;
+  padding-top: 33px;
+  padding-left: 12px;
+  padding-bottom: 40px;
+  border-radius: 20px;
+  font-weight: normal;
+  font-family: $font-golos;
+  background: var(--gray-ligth);
+}
+
+.list-item__title {
+  margin: 0;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 110%;
+  font-family: $font-roadradio;
+}
+
+.list-item__link {
+  margin-top: 15px;
+  @include link;
+  font-size: 19px;
+  line-height: 150%;
+  font-family: $font-golos;
+}
+
+.list-item__adress {
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.list-item__link-button {
+  @include link;
+  color: var(--text-red);
+
+  &:hover {
+    color: var(--text-red-hover);
+  }
+
+  &:active {
+    color: var(--text-red-active);
+  }
+}

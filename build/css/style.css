@@ -516,8 +516,8 @@ input[type="radio"].visually-hidden {
   font-family: "RoadRadio", "Arial", sans-serif;
   color: var(--color-black); }
 
-.main-feedbac__form input,
-.main-feedbac__form textarea {
+.main-feedback__form input,
+.main-feedback__form textarea {
   width: 100%;
   padding-top: 21px;
   padding-bottom: 21px;
@@ -526,14 +526,14 @@ input[type="radio"].visually-hidden {
   background: var(--gray-ligth);
   border-radius: 14px;
   border: none; }
-  .main-feedbac__form input::placeholder,
-  .main-feedbac__form textarea::placeholder {
+  .main-feedback__form input::placeholder,
+  .main-feedback__form textarea::placeholder {
     font-weight: normal;
     font-size: 16px;
     line-height: 150%;
     font-family: "Golos", "Arial", sans-serif; }
 
-.main-feedbac__form textarea {
+.main-feedback__form textarea {
   padding-bottom: 23px; }
 
 .form__checkbox {
@@ -585,3 +585,60 @@ input[type="radio"].visually-hidden {
     background: var(--text-red-hover); }
   .form__button:active {
     background: var(--text-red-active); }
+
+.map {
+  margin-top: 50px; }
+
+.addresses {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  padding-left: 17px;
+  padding-right: 15px;
+  background: var(--white); }
+
+.addresses__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.list-item {
+  margin-bottom: 10px;
+  padding-top: 33px;
+  padding-left: 12px;
+  padding-bottom: 40px;
+  border-radius: 20px;
+  font-weight: normal;
+  font-family: "Golos", "Arial", sans-serif;
+  background: var(--gray-ligth); }
+
+.list-item__title {
+  margin: 0;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 110%;
+  font-family: "RoadRadio", "Arial", sans-serif; }
+
+.list-item__link {
+  margin-top: 15px;
+  display: block;
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+  font-size: 19px;
+  line-height: 150%;
+  font-family: "Golos", "Arial", sans-serif; }
+
+.list-item__adress {
+  font-size: 14px;
+  line-height: 140%; }
+
+.list-item__link-button {
+  display: block;
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+  color: var(--text-red); }
+  .list-item__link-button:hover {
+    color: var(--text-red-hover); }
+  .list-item__link-button:active {
+    color: var(--text-red-active); }

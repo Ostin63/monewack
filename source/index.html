@@ -55,7 +55,7 @@
       <div class="main-contacts__requisites requisites">
         <a class="requisites__phone" href="tel:+79034679851">8 (903) 467 98 51</a>
         <a class="requisites__mail" href="mailto:info@monevac.ru">info@monevac.ru</a>
-        <p class="requisites__text--name">
+        <p class="requisites__text requisites__text--name">
           Полное наименование: Общество с ограниченной ответственностью «МОНЕВАК» Сокращенное наименование: ООО
           «МОНЕВАК»
         </p>
@@ -82,7 +82,7 @@
     <section class="main-feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
       <p class="main-feedback__title">Остались вопросы?</p>
-      <form class="main-feedbac__form form" action="#">
+      <form class="main-feedback__form form" action="#">
         <label for="name">
           <input type="text" placeholder="Ваше имя" id="name">
         </label>
@@ -99,68 +99,73 @@
         </div>
         <button class="form__button" type="submit">Задать вопрос</button>
       </form>
-      <section class="map">
-        <h2 class="visually-hidden">Карта офисов</h2>
-        <div>
-          <img src="img/map-mobil.png" alt="">
-        </div>
-      </section>
-      <section class="addresses">
-        <h2 class="visally-hidden">Адреса офисов</h2>
-        <ul>
-          <li>
-            <h3>МОСКВА</h3>
-            <a href="tel:+74991361718">+7 (499) 136-17-18</a>
-            <a href="tel:+79034679851">+7 (903) 467-98-51</a>
-            <p>115114, ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро "Павелецкая")</p>
-            <a href="#">Проложить маршрут</a>
-            <p></p>
-          </li>
-          <li>
-            <h3>Волгоград</h3>
-            <a href="tel:+74991361718">+7 (499) 136-17-18</a>
-            <a href="tel:+79034679851">+7 (903) 467-98-51</a>
-            <p>115114, ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро "Павелецкая")</p>
-            <a href="#">Проложить маршрут</a>
-            <p>Режим работы: c 10:00 до 18:00</p>
-          </li>
-          <li>
-            <h3>КРАСНОДАР</h3>
-            <a href="tel:+74991361718">+7 (499) 136-17-18</a>
-            <a href="tel:+79034679851">+7 (903) 467-98-51</a>
-            <p>115114, ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро "Павелецкая")</p>
-            <a href="#">Проложить маршрут</a>
-            <p>Режим работы: c 10:00 до 18:00</p>
-          </li>
-          <li>
-            <h3>воронеж</h3>
-            <a href="tel:+74991361718">+7 (499) 136-17-18</a>
-            <a href="tel:+79034679851">+7 (903) 467-98-51</a>
-            <p>115114, ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро "Павелецкая")</p>
-            <a href="#">Проложить маршрут</a>
-            <p>Режим работы: c 10:00 до 18:00</p>
-          </li>
-          <li>
-            <h3>ЕРЕВАН</h3>
-            <a href="tel:+74991361718">+7 (499) 136-17-18</a>
-            <a href="tel:+79034679851">+7 (903) 467-98-51</a>
-            <p>115114, ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро "Павелецкая")</p>
-            <a href="#">Проложить маршрут</a>
-            <p>Режим работы: c 10:00 до 18:00</p>
-          </li>
-          <li>
-            <h3>НОВОСИБИРСК</h3>
-            <a href="tel:+73832062461">+7 (383) 206-24-61;</a>
-            <a href="tel:+73832062711">+7 (383) 206-27-11</a>
-            <a href="tel:+79034679851">+7 (903) 467-98-51</a>
-            <p>Факс: +7 (383) 20-62-209;
-              +7 (383) 20-62-210</p>
-            <p>115114, ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро "Павелецкая")</p>
-            <a href="#">Проложить маршрут</a>
-            <p>Режим работы: c 10:00 до 18:00</p>
-          </li>
-        </ul>
-      </section>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Карта офисов</h2>
+      <a class="map-320"
+        href="https://yandex.ru/map-widget/v1/?um=constructor%3A5c29cc1b31a93fbe7977cdcd563a758fb1b21f80dcd647a84df8aae9fca60d31&amp;source=constructor">
+        <img class="visually-hidden" src="img/map-mobil.png" alt="">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A5c29cc1b31a93fbe7977cdcd563a758fb1b21f80dcd647a84df8aae9fca60d31&amp;source=constructor"
+          width="320" height="477" frameborder="0"></iframe>
+      </a>
+    </section>
+    <section class="addresses">
+      <h2 class="visually-hidden">Адреса офисов</h2>
+      <ul class="addresses__list addresses-list">
+        <li class="addresses-list__item list-item">
+          <h3 class="list-item__title">МОСКВА</h3>
+          <a class="list-item__link" href="tel:+74991361718">+7 (499) 136-17-18</a>
+          <a class="list-item__link" href="tel:+79034679851">+7 (903) 467-98-51</a>
+          <p class="list-item__adress">115114, ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро "Павелецкая")</p>
+          <a class="list-item__link-button" href="#">Проложить маршрут</a>
+          <p class="list-item__mode"></p>
+        </li>
+        <li class="addresses-list__item list-item">
+          <h3 class="list-item__title">Волгоград</h3>
+          <a class="list-item__link" href="tel:+74991361718">+7 (499) 136-17-18</a>
+          <a class="list-item__link" href="tel:+79034679851">+7 (903) 467-98-51</a>
+          <p class="list-item__adress">115114, ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро "Павелецкая")</p>
+          <a class="list-item__link-button" href="#">Проложить маршрут</a>
+          <p class="list-item__mode">Режим работы: c 10:00 до 18:00</p>
+        </li>
+        <li class="addresses-list__item list-item">
+          <h3 class="list-item__title">КРАСНОДАР</h3>
+          <a class="list-item__link" href="tel:+74991361718">+7 (499) 136-17-18</a>
+          <a class="list-item__link" href="tel:+79034679851">+7 (903) 467-98-51</a>
+          <p class="list-item__adress">115114, ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро "Павелецкая")</p>
+          <a class="list-item__link-button" href="#">Проложить маршрут</a>
+          <p class="list-item__mode">Режим работы: c 10:00 до 18:00</p>
+        </li>
+        <li class="addresses-list__item list-item">
+          <h3 class="list-item__title">воронеж</h3>
+          <a class="list-item__link" href="tel:+74991361718">+7 (499) 136-17-18</a>
+          <a class="list-item__link" href="tel:+79034679851">+7 (903) 467-98-51</a>
+          <p class="list-item__adress">115114, ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро "Павелецкая")</p>
+          <a class="list-item__link-button" href="#">Проложить маршрут</a>
+          <p class="list-item__mode">Режим работы: c 10:00 до 18:00</p>
+        </li>
+        <li class="addresses-list__item list-item">
+          <h3 class="list-item__title">ЕРЕВАН</h3>
+          <a class="list-item__link" href="tel:+74991361718">+7 (499) 136-17-18</a>
+          <a class="list-item__link" href="tel:+79034679851">+7 (903) 467-98-51</a>
+          <p class="list-item__adress">115114, ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро "Павелецкая")</p>
+          <a class="list-item__link-button" href="#">Проложить маршрут</a>
+          <p class="list-item__mode">Режим работы: c 10:00 до 18:00</p>
+        </li>
+        <li class="addresses-list__item list-item">
+          <h3 class="list-item__title">НОВОСИБИРСК</h3>
+          <a class="list-item__link" href="tel:+73832062461">+7 (383) 206-24-61;</a>
+          <a class="list-item__link" href="tel:+73832062711">+7 (383) 206-27-11</a>
+          <a class="list-item__link" href="tel:+79034679851">+7 (903) 467-98-51</a>
+          <p class="list-item__adress">Факс: +7 (383) 20-62-209;
+            +7 (383) 20-62-210</p>
+          <p>115114, ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро "Павелецкая")</p>
+          <a class="list-item__link-button" href="#">Проложить маршрут</a>
+          <p class="list-item__mode">Режим работы: c 10:00 до 18:00</p>
+        </li>
+      </ul>
+    </section>
   </main>
   <footer class="footer">
     <section class="footer__nav footer-nav">
