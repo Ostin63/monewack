@@ -59,13 +59,12 @@
 .search__text {
   position: absolute;
   top: -3px;
-  right: 20px;
+  right: 0;
   background: var(--white-80);
-  display: none;
-  z-index: 10;
+  visibility: hidden;
 
-  :hover {
-    display: block;
+  &:hover {
+    visibility: visible;
   }
 }
 
@@ -75,8 +74,8 @@
   height: 18px;
   background: url("../img/search.svg") 50% 50% no-repeat;
 
-  &:hover+.search__text {
-    display: block;
+  &:hover + .search__text {
+    visibility: visible;
   }
 }
 
@@ -89,6 +88,7 @@
 }
 
 .nav-site__item {
+  position: relative;
   margin-block: 16px;
   color: var(--text-black);
 
@@ -102,6 +102,20 @@
 
   &.active {
     color: var(--gray);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 2px;
+    top: 7px;
+    right: -16px;
+    background: var(--black);
+  }
+
+  &:last-child::after {
+    display: none;
   }
 }
 
