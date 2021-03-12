@@ -8,9 +8,27 @@
 
 .addresses__list {
   @include list-style;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    max-width: 710px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1290px;
+    grid-template-columns: 1fr 300px 300px 1fr;
+    grid-gap: 30px;
+  }
 }
 
 .list-item {
+  max-width: 350px;
   margin-bottom: 10px;
   padding-top: 33px;
   padding-inline: 12px;
@@ -19,6 +37,27 @@
   font-weight: normal;
   font-family: $font-golos;
   background: var(--gray-ligth);
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 300px;
+  }
+
+  &:last-child {
+    max-width: 710px;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 630px;
+      grid-column: 3 / -1;
+    }
+  }
 }
 
 .list-item__title {
