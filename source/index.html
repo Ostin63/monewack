@@ -14,23 +14,28 @@
 <body class="page-contacts__body">
   <header class="page-contacts__header header">
     <div class="header__top header-top">
-      <button class="header-top__button"></button>
+      <a class="header-top__button" href="#">
+        <span class="visually-hidden">Открыть навигацию</span>
+      </a>
       <ul class="header-top__nav header-nav">
-        <li>
-          <a class="header-nav__link" href="">Упаковка</a>
+        <li class="header-nav__link header-package">
+          <a href="#">Упаковка</a>
         </li>
-        <li>
-          <a class="header-nav__link" href="">Оборудование</a>
+        <li class="header-nav__link header-plant">
+          <a href="#">Оборудование</a>
         </li>
-        <li>
-          <a class="header-nav__link" href="">Сервис и запчасти</a>
+        <li class="header-nav__link header-servece">
+          <a href="#">Сервис и запчасти</a>
         </li>
       </ul>
       <a class="header-top__logo" href="#">
-        <img src="img/logo.png" width="90" height="30" alt="логотип">
+        <picture>
+          <source media="(min-width: 1290px)" srcset="img/logo-1290.png">
+          <img src="img/logo.png" width="90" height="30" alt="логотип">
+        </picture>
       </a>
       <a class="header-top__compare" href="#">
-        <img src="img/compare.svg" alt="">
+        <span class="visually-hidden">Сравнить</span>
       </a>
       <form class="header-top__search search" action="#">
         <label for="search">
@@ -39,6 +44,11 @@
           <input class="search__text" type="text" id="search">
         </label>
       </form>
+      <div class="header-top__contact header-contact">
+        <a class="header-contact__phone" href="tel:+74991361718">+7 (499) 136-17-18</a>
+        <a class="header-contact__mail" href="mailto:info@monevac.ru">info@monevac.ru</a>
+      </div>
+      <a class="header-top__request" href="#">Оставить заявку</a>
     </div>
     <ul class="header__nav-site nav-site">
       <li class="nav-site__item nav-main">
