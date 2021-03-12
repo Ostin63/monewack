@@ -627,7 +627,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   text-decoration: none;
   color: inherit;
-  width: 190px;
+  max-width: 190px;
   height: 52px;
   background: #BF2738;
   border-radius: 14px;
@@ -667,10 +667,34 @@ input[type="radio"].visually-hidden {
       font-size: 46px;
       line-height: 100%; } }
 
-.main-contacts__requisites {
+@media (min-width: 768px) {
+  .contacts-block {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr repeat(10, 50px) 1fr;
+    grid-gap: 10px; } }
+
+@media (min-width: 1290px) {
+  .contacts-block {
+    grid-template-columns: 1fr repeat(10, 80px) 1fr;
+    grid-gap: 30px; } }
+
+.contacts-block__requisites {
   padding-top: 30px;
   padding-left: 15px;
   padding-right: 18px; }
+  @media (min-width: 768px) {
+    .contacts-block__requisites {
+      height: 590px;
+      margin: 0;
+      padding: 0;
+      margin-left: 29px;
+      grid-column: 1 / 6; } }
+  @media (min-width: 1290px) {
+    .contacts-block__requisites {
+      max-width: 490px;
+      margin: 0;
+      justify-self: end; } }
 
 .requisites__phone {
   margin: 0;
@@ -681,6 +705,10 @@ input[type="radio"].visually-hidden {
   line-height: 120%;
   font-family: "RoadRadio", "Arial", sans-serif;
   color: var(--text-black); }
+  @media (min-width: 1290px) {
+    .requisites__phone {
+      font-size: 36px;
+      line-height: 110%; } }
 
 .requisites__mail {
   margin: 0;
@@ -691,20 +719,41 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   font-family: "Golos", "Arial", sans-serif;
   color: var(--text-red); }
+  @media (min-width: 1290px) {
+    .requisites__mail {
+      font-size: 25px;
+      line-height: 30px; } }
 
 .requisites__text {
   margin-top: 19px;
-  font-weight: normal;
+  font-size: 13px;
+  line-height: 150%;
   font-family: "Golos", "Arial", sans-serif;
   color: var(--text-gray); }
   .requisites__text--name {
+    font-size: 14px;
+    line-height: 140%;
     color: var(--text-black); }
+    @media (min-width: 1290px) {
+      .requisites__text--name {
+        font-size: 17px;
+        line-height: 110%; } }
 
 .main-feedback {
   padding-top: 54px;
   padding-left: 16px;
   padding-right: 14px;
   background: var(--white); }
+  @media (min-width: 768px) {
+    .main-feedback {
+      max-width: 630px;
+      margin: 0;
+      padding: 0;
+      margin-right: 29px;
+      grid-column: 7 / -1; } }
+  @media (min-width: 1290px) {
+    .main-feedback {
+      margin-right: 0; } }
 
 .main-feedback__title {
   font-weight: normal;
@@ -712,12 +761,20 @@ input[type="radio"].visually-hidden {
   line-height: 120%;
   font-family: "RoadRadio", "Arial", sans-serif;
   color: var(--color-black); }
+  @media (min-width: 768px) {
+    .main-feedback__title {
+      margin-top: 0;
+      font-size: 28px;
+      line-height: 120%; } }
+  @media (min-width: 1290px) {
+    .main-feedback__title {
+      font-size: 36px;
+      line-height: 110%; } }
 
 .main-feedback__form input,
 .main-feedback__form textarea {
   width: 100%;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-block: 21px;
   padding-left: 20px;
   margin-bottom: 10px;
   background: var(--gray-ligth);
@@ -729,9 +786,46 @@ input[type="radio"].visually-hidden {
     font-size: 16px;
     line-height: 150%;
     font-family: "Golos", "Arial", sans-serif; }
+  @media (min-width: 1290px) {
+    .main-feedback__form input,
+    .main-feedback__form textarea {
+      padding-top: 19px;
+      padding-bottom: 15px;
+      margin: 0; } }
 
 .main-feedback__form textarea {
+  height: 166px;
+  resize: vertical;
   padding-bottom: 23px; }
+  @media (min-width: 1290px) {
+    .main-feedback__form textarea {
+      height: 133px; } }
+
+@media (min-width: 1290px) {
+  .main-feedback__form {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 30px;
+    grid-template-rows: 52px 141px 20px 60px;
+    grid-row-gap: 20px; }
+    .main-feedback__form .form__name {
+      grid-column: 1 / 4;
+      grid-row: 1 / 2; }
+    .main-feedback__form .form__phone {
+      grid-column: 4 / -1;
+      grid-row: 1 / 2; }
+    .main-feedback__form .form__message {
+      grid-column: 1 / -1;
+      grid-row: 2 / 3;
+      align-self: end; }
+    .main-feedback__form .form__checkbox {
+      grid-column: 1 / -1;
+      grid-row: 3 / 4;
+      align-self: center; }
+    .main-feedback__form .form__button {
+      grid-column: 1 / 4;
+      grid-row: 4 / -1;
+      align-self: end; } }
 
 .form__checkbox {
   margin-top: 11px;

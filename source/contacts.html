@@ -62,53 +62,64 @@
   <main>
     <section class="main-contacts">
       <h2 class="main-contacts__title">Контакты</h2>
-      <div class="main-contacts__requisites requisites">
-        <a class="requisites__phone" href="tel:+79034679851">8 (903) 467 98 51</a>
-        <a class="requisites__mail" href="mailto:info@monevac.ru">info@monevac.ru</a>
-        <p class="requisites__text requisites__text--name">
-          Полное наименование: Общество с ограниченной ответственностью «МОНЕВАК» Сокращенное наименование: ООО
-          «МОНЕВАК»
-        </p>
-        <p class="requisites__text">
-          ИНН: 3448050610
-          КПП: 344801001
-          ОКПО: 67354285
-          ОКАТО: 18401000000
-          ОГРН: 1103461002480
-          Код по ОКВЭД: 51.70
-        </p>
-        <p class="requisites__text">
-          Банк: Филиала «Ростовский» ОАО «Альфа-Банк» г Ростов на Дону
-          БИК: 046015207
-          к/с: 30101810500000000207
-          р/с: 40702810926090000003
-        </p>
-        <p class="requisites__text">
-          Юридический адрес: 400080, Волгоградская обл. г. Волгоград ул. Командира Рудь,14А, офис 13
-          Почтовый адрес: 400080, Волгоградская обл. г. Волгоградъ ул. Командира Рудь, 14А, офис 13
-        </p>
-      </div>
-    </section>
-    <section class="main-feedback">
-      <h2 class="visually-hidden">Обратная связь</h2>
-      <p class="main-feedback__title">Остались вопросы?</p>
-      <form class="main-feedback__form form" action="#">
-        <label for="name">
-          <input type="text" placeholder="Ваше имя" id="name">
-        </label>
-        <label for="phone">
-          <input type="text" placeholder="Ваш телефон" id="phone">
-        </label>
-        <label for="message">
-          <textarea name="message" id="message" rows="7" placeholder="Ваше имя"></textarea>
-        </label>
-        <div class="form__checkbox">
-          <input class="visually-hidden" type="checkbox" id="checkbox">
-          <label for="checkbox">Я подтверждаю свое согласие с политикой
-            в отношении <b>обработки персональных данных</b></label>
+      <div class="main-contacts__block contacts-block">
+        <div class="contacts-block__requisites requisites">
+          <a class="requisites__phone" href="tel:+79034679851">8 (903) 467 98 51</a>
+          <a class="requisites__mail" href="mailto:info@monevac.ru">info@monevac.ru</a>
+          <p class="requisites__text requisites__text--name">
+            Полное наименование: Общество&nbsp;&nbsp;ограниченной&nbsp;ответственностью
+              «МОНЕВАК»<br>
+               Сокращенное наименование: ООО «МОНЕВАК»
+          </p>
+          <p class="requisites__text">
+            ИНН: 3448050610<br>
+            КПП: 344801001<br>
+            ОКПО: 67354285<br>
+            ОКАТО: 18401000000<br>
+            ОГРН: 1103461002480<br>
+            Код по ОКВЭД: 51.70<br>
+          </p>
+          <p class="requisites__text">
+            Банк: Филиала «Ростовский» ОАО «Альфа-Банк» г Ростов на Дону
+            БИК: 046015207<br>
+            к/с: 30101810500000000207<br>
+            р/с: 40702810926090000003<br>
+          </p>
+          <p class="requisites__text">
+            Юридический адрес: 400080,<br>
+             Волгоградская обл. г. Волгоград<br>
+            ул. Командира Рудь,14А, офис 13
+            Почтовый адрес: 400080, Волгоградская<br>
+             обл. г. Волгоградъ ул. Командира Рудь, 14А,<br> офис 13
+          </p>
         </div>
-        <button class="form__button" type="submit">Задать вопрос</button>
-      </form>
+        <div class="contacts-block__feedback main-feedback">
+          <p class="main-feedback__title">Остались вопросы?</p>
+          <form class="main-feedback__form form" action="#">
+            <div class="form__name">
+              <label for="name">
+                <input type="text" placeholder="Ваше имя" id="name">
+              </label>
+            </div>
+            <div class="form__phone">
+              <label for="phone">
+                <input type="text" placeholder="Ваш телефон" id="phone">
+              </label>
+            </div>
+            <div class="form__message">
+              <label for="message">
+                <textarea name="message" id="message" placeholder="Ваше имя"></textarea>
+              </label>
+            </div>
+            <div class="form__checkbox">
+              <input class="visually-hidden" type="checkbox" id="checkbox">
+              <label for="checkbox">Я подтверждаю свое согласие с политикой
+                в отношении <b>обработки персональных данных</b></label>
+            </div>
+            <button class="form__button" type="submit">Задать вопрос</button>
+          </form>
+        </div>
+      </div>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта офисов</h2>
