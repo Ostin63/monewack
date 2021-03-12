@@ -692,7 +692,7 @@ input[type="radio"].visually-hidden {
       grid-column: 1 / 6; } }
   @media (min-width: 1290px) {
     .contacts-block__requisites {
-      max-width: 490px;
+      max-width: 480px;
       margin: 0;
       justify-self: end; } }
 
