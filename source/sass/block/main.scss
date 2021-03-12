@@ -1,0 +1,11 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+
+  h1 {
+    font-size: 26px;
+    line-height: 100%;
+    align-self: center;
+    grid-column: 2 /3;
+  }
+}

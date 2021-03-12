@@ -375,6 +375,26 @@ input[type="radio"].visually-hidden {
 *::after {
   box-sizing: border-box; }
 
+.page {
+  height: 100%; }
+
+.page-body {
+  background-color: var(--white);
+  min-height: 100%;
+  font-family: "RoadRadio", "Arial", sans-serif;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start; }
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr; }
+  .main h1 {
+    font-size: 26px;
+    line-height: 100%;
+    align-self: center;
+    grid-column: 2 /3; }
+
 .header {
   color: var(--white); }
 
@@ -383,13 +403,15 @@ input[type="radio"].visually-hidden {
   padding-bottom: 17px;
   display: grid;
   grid-template-columns: 1fr repeat(4, 40px) 1fr;
-  grid-gap: 10px; }
+  grid-gap: 10px;
+  box-sizing: border-box; }
   @media (min-width: 768px) {
     .header-top {
       padding-block: 14px;
       grid-template-columns: 1fr repeat(10, 50px) 1fr; } }
   @media (min-width: 1290px) {
     .header-top {
+      padding-block: 20px;
       grid-template-columns: 1fr repeat(10, 80px) 1fr;
       grid-gap: 30px; } }
 
@@ -633,6 +655,17 @@ input[type="radio"].visually-hidden {
   font-size: 22px;
   line-height: 120%;
   font-family: "RoadRadio", "Arial", sans-serif; }
+  @media (min-width: 768px) {
+    .main-contacts__title {
+      padding-block: 15px;
+      font-size: 32px;
+      line-height: 100%; } }
+  @media (min-width: 1290px) {
+    .main-contacts__title {
+      padding-top: 24px;
+      padding-bottom: 30px;
+      font-size: 46px;
+      line-height: 100%; } }
 
 .main-contacts__requisites {
   padding-top: 30px;

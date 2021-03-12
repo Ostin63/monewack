@@ -7,6 +7,19 @@
   font-size: 22px;
   line-height: 120%;
   font-family: $font-roadradio;
+
+  @media (min-width: $tablet-width) {
+    padding-block: 15px;
+    font-size: 32px;
+    line-height: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 24px;
+    padding-bottom: 30px;
+    font-size: 46px;
+    line-height: 100%;
+  }
 }
 
 .main-contacts__requisites {
