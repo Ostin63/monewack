@@ -33,7 +33,7 @@
 }
 
 .footer-catalog {
-  width: 270px;
+  max-width: 270px;
   @include list-style;
 
   @media (min-width: $desktop-width) {
@@ -64,7 +64,7 @@
 }
 
 .footer-nav__site {
-  width: 270px;
+  max-width: 270px;
   @include list-style;
   margin-top: 15px;
   display: flex;

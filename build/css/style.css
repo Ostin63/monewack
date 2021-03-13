@@ -779,13 +779,16 @@ input[type="radio"].visually-hidden {
   margin-bottom: 10px;
   background: var(--gray-ligth);
   border-radius: 14px;
-  border: none; }
+  border: 2px solid var(--gray-ligth); }
   .main-feedback__form input::placeholder,
   .main-feedback__form textarea::placeholder {
     font-weight: normal;
     font-size: 16px;
     line-height: 150%;
     font-family: "Golos", "Arial", sans-serif; }
+  .main-feedback__form input.error,
+  .main-feedback__form textarea.error {
+    border: 2px solid var(--text-red-hover); }
   @media (min-width: 1290px) {
     .main-feedback__form input,
     .main-feedback__form textarea {
@@ -1007,7 +1010,7 @@ input[type="radio"].visually-hidden {
       grid-column-gap: 30px; } }
 
 .footer-catalog {
-  width: 270px;
+  max-width: 270px;
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -1033,7 +1036,7 @@ input[type="radio"].visually-hidden {
     color: var(--white); }
 
 .footer-nav__site {
-  width: 270px;
+  max-width: 270px;
   margin: 0;
   padding: 0;
   list-style: none;

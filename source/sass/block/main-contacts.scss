@@ -142,7 +142,7 @@
 }
 
 .main-feedback__form {
- 
+
   input,
   textarea {
     width: 100%;
@@ -151,13 +151,17 @@
     margin-bottom: 10px;
     background: var(--gray-ligth);
     border-radius: 14px;
-    border: none;
+    border: 2px solid var(--gray-ligth);
 
     &::placeholder {
       font-weight: normal;
       font-size: 16px;
       line-height: 150%;
       font-family: $font-golos;
+    }
+
+    &.error {
+      border: 2px solid var(--text-red-hover);
     }
 
     @media (min-width: $desktop-width) {
