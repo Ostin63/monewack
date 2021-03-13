@@ -908,18 +908,24 @@ input[type="radio"].visually-hidden {
       grid-gap: 30px; } }
 
 .list-item {
+  width: 100%;
   max-width: 350px;
+  height: 310px;
   margin-bottom: 10px;
   padding-top: 33px;
   padding-inline: 12px;
   padding-bottom: 40px;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-weight: normal;
   font-family: "Golos", "Arial", sans-serif;
   background: var(--gray-ligth); }
   @media (min-width: 768px) {
     .list-item {
-      margin: 0; } }
+      margin: 0;
+      padding-inline: 22px; } }
   @media (min-width: 1290px) {
     .list-item {
       max-width: 300px; } }
@@ -940,27 +946,37 @@ input[type="radio"].visually-hidden {
   line-height: 110%;
   font-family: "RoadRadio", "Arial", sans-serif; }
 
-.list-item__link {
+.item-phone {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+
+.item-phone__link {
   margin-top: 15px;
   margin: 0;
   text-decoration: none;
   color: inherit;
   font-size: 19px;
   line-height: 150%;
-  font-family: "Golos", "Arial", sans-serif; }
+  font-family: "Golos", "Arial", sans-serif;
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .item-phone__link {
+      flex-direction: row; } }
 
-.list-item__adress {
+.item-block__adress {
   font-size: 14px;
   line-height: 140%; }
 
-.list-item__link-button {
+.item-block__link-button {
   margin: 0;
   text-decoration: none;
   color: inherit;
   color: var(--text-red); }
-  .list-item__link-button:hover {
+  .item-block__link-button:hover {
     color: var(--text-red-hover); }
-  .list-item__link-button:active {
+  .item-block__link-button:active {
     color: var(--text-red-active); }
 
 .footer {
@@ -1013,6 +1029,8 @@ input[type="radio"].visually-hidden {
     font-family: "Inter", "Arial", sans-serif; }
   .footer-catalog__item.active {
     color: var(--text-red); }
+  .footer-catalog__item:hover {
+    color: var(--white); }
 
 .footer-nav__site {
   width: 270px;
@@ -1041,6 +1059,8 @@ input[type="radio"].visually-hidden {
     font-size: 16px;
     line-height: 180%;
     font-family: "AkzidenzGrotesk", "Arial", sans-serif; }
+  .footer-nav-site__item:hover {
+    color: var(--white); }
 
 .footer__contacts {
   padding-top: 40px;

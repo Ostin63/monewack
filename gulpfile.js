@@ -8,6 +8,7 @@ const imagemin = require("gulp-imagemin");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
+const uglify = require('gulp-uglify-es').default;
 const del = require("del");
 const sync = require("browser-sync").create();
 
@@ -43,12 +44,11 @@ const html = () => {
 }
 
 exports.html = html;
-/*
+
 // Scripts
 
 const scripts = () => {
   return src("source/js/*.js")
-    .pipe(concat('script.js'))
     .pipe(uglify())
     .pipe(rename("script.min.js"))
     .pipe(dest("build/js"))
@@ -56,7 +56,7 @@ const scripts = () => {
 }
 
 exports.scripts = scripts;
-*/
+
 // Images
 
 const images = () => {
@@ -120,7 +120,7 @@ const reload = done => {
 
 const watcher = () => {
   watch("source/sass/**/*.scss", series(styles));
-  //watch("source/js/script.js", series(scripts));
+  watch("source/js/script.js", series(scripts));
   watch("source/*.html", series(html, reload));
 }
 
@@ -131,7 +131,7 @@ const build = series(
   parallel(
     styles,
     html,
-    //scripts,
+    scripts,
     copy,
     images
   ));
@@ -145,7 +145,7 @@ exports.default = series(
   parallel(
     styles,
     html,
-    //scripts,
+    scripts,
     copy
   ),
   series(
