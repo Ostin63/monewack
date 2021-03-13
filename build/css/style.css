@@ -1001,7 +1001,8 @@ input[type="radio"].visually-hidden {
       margin-left: -105px; } }
 
 .footer-catalog__item {
-  color: var(--white); }
+  color: var(--white);
+  cursor: pointer; }
   .footer-catalog__item a {
     margin: 0;
     text-decoration: none;

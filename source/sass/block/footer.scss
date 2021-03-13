@@ -44,6 +44,7 @@
 
 .footer-catalog__item {
   color: var(--white);
+  cursor: pointer;
 
   a {
     @include link;
