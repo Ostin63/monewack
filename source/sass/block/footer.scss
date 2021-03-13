@@ -1,13 +1,45 @@
+.footer {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr repeat(10, 50px) 1fr;
+  }
+}
+
 .footer-nav {
   padding-top: 40px;
   padding-left: 15px;
   padding-right: 32px;
   padding-bottom: 40px;
   background: var(--black);
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 7;
+    padding-right: 82px;
+
+    ul {
+      float: right;
+      box-sizing: border-box;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 65px;
+    padding-right: 0;
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 80px);
+    grid-column-gap: 30px;
+  }
 }
 
 .footer-catalog {
+  width: 270px;
   @include list-style;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 4;
+    margin-left: -105px;
+  }
 }
 
 .footer-catalog__item {
@@ -27,11 +59,23 @@
 }
 
 .footer-nav__site {
+  width: 270px;
   @include list-style;
   margin-top: 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+    grid-column: 2 / 6;
+    margin-left: -105px;
+    justify-content: start;
+
+    li {
+      margin-right: 10px;
+    }
+  }
 }
 
 .footer-nav-site__item {
@@ -51,6 +95,29 @@
   padding-inline: 15px;
   background: var(--black-ligth);
   color: var(--white);
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 7 / -1;
+    padding-left: 40px;
+    padding-right: 100px;
+
+    .footer-contacts__phone {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 65px;
+    padding-bottom: 55px;
+    padding-inline: 0;
+    padding-right: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 80px) 1fr;
+    grid-column-gap: 30px;
+    grid-template-rows: 43px 43px 54px 139px;
+  }
 }
 
 .footer-contacts__phone {
@@ -59,10 +126,23 @@
   font-size: 23px;
   line-height: 150%;
   font-family: $font-golosmedium;
+
+  @media (min-width: $desktop-width) {
+    margin-left: -15px;
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+    font-size: 30px;
+    line-height: 130%;
+
+    &--second {
+      grid-row: 2 / 3;
+    }
+  }
+
 }
 
 .footer-contacts__button {
-  width: 190px;
+  max-width: 190px;
   height: 52px;
   @include link;
   margin-top: 20px;
@@ -83,6 +163,13 @@
   &:active {
     background: var(--text-red-active);
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-left: 10px;
+    grid-column: 5 / -1;
+    grid-row: 1 / 2;
+  }
 }
 
 .footer-contacts__mail {
@@ -93,6 +180,16 @@
   line-height: 110%;
   font-family: $font-akzidenzGroteskmd;
   color: var(--color-mail);
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-left: -15px;
+    margin-bottom: 0;
+    grid-column: 2 / 4;
+    font-size: 24px;
+    line-height: 140%;
+    align-self: end;
+  }
 }
 
 .footer-contacts__adress {
@@ -100,13 +197,57 @@
   font-size: 16px;
   line-height: 130%;
   font-family: $font-inter;
+
+  @media (min-width: $desktop-width) {
+    margin-block: 0;
+    margin-left: -15px;
+    grid-column: 2 / 6;
+    align-self: end;
+  }
 }
 
-.footer-contacts__copyright {
-  padding-top: 20px;
+.footer__copyright {
+  margin: 0;
+  padding-block: 20px;
+  padding-left: 15px;
   border-top: 1px solid var(--white-5);
   font-size: 13px;
   line-height: 110%;
   font-family: $font-akzidenzGrotesk;
   color: var(--gray-dark);
+  background: var(--black-ligth);
+
+  p {
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 120px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 7;
+    background: var(--black);
+
+    p {
+      float: right;
+      @media (min-width: $desktop-width){
+        padding-right: 390px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-block: 26px;
+    padding-bottom: 27px;
+  }
+}
+
+.footer-bottom {
+
+  @media (min-width: $tablet-width) {
+    grid-column: 7 / -1;
+    background: var(--black-ligth);
+    border-top: 1px solid var(--white-5);
+  }
 }
