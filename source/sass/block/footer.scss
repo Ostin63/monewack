@@ -86,6 +86,7 @@
 
 .footer-nav-site__item {
   color: var(--gray-dark);
+  margin-right: 5px;
 
   a {
     @include link;
@@ -153,17 +154,16 @@
 
 .footer-contacts__button {
   max-width: 190px;
-  height: 52px;
   @include link;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding-block: 16px;
+  padding-block: 14px;
   text-align: center;
   border-radius: 14px;
   font-size: 14px;
   line-height: 14px;
   font-family: $font-roadradio;
-  border: 2px solid var(--gray-dark);
+  border: 2px solid var(--border);
   box-sizing: border-box;
 
   &:hover {
@@ -175,8 +175,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 52px;
     margin: 0;
     margin-left: 10px;
+    padding-block: 19px;
     grid-column: 5 / -1;
     grid-row: 1 / 2;
   }

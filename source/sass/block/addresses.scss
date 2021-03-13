@@ -54,8 +54,10 @@
 
   &:last-child {
     max-width: 710px;
+    height: 395px;
 
     @media (min-width: $tablet-width) {
+      height: 310px;
       grid-column: 1 / -1;
     }
 

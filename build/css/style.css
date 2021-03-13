@@ -368,7 +368,8 @@ input[type="radio"].visually-hidden {
   --color-mail: #F23147;
   --text-red-hover: #db283d;
   --text-red-active: #8f1926;
-  --color-black: #212121; }
+  --color-black: #212121;
+  --border: #404040; }
 
 *,
 *::before,
@@ -933,9 +934,11 @@ input[type="radio"].visually-hidden {
     .list-item {
       max-width: 300px; } }
   .list-item:last-child {
-    max-width: 710px; }
+    max-width: 710px;
+    height: 395px; }
     @media (min-width: 768px) {
       .list-item:last-child {
+        height: 310px;
         grid-column: 1 / -1; } }
     @media (min-width: 1290px) {
       .list-item:last-child {
@@ -1055,7 +1058,8 @@ input[type="radio"].visually-hidden {
         margin-right: 10px; } }
 
 .footer-nav-site__item {
-  color: var(--gray-dark); }
+  color: var(--gray-dark);
+  margin-right: 5px; }
   .footer-nav-site__item a {
     margin: 0;
     text-decoration: none;
@@ -1112,19 +1116,18 @@ input[type="radio"].visually-hidden {
 
 .footer-contacts__button {
   max-width: 190px;
-  height: 52px;
   margin: 0;
   text-decoration: none;
   color: inherit;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding-block: 16px;
+  padding-block: 14px;
   text-align: center;
   border-radius: 14px;
   font-size: 14px;
   line-height: 14px;
   font-family: "RoadRadio", "Arial", sans-serif;
-  border: 2px solid var(--gray-dark);
+  border: 2px solid var(--border);
   box-sizing: border-box; }
   .footer-contacts__button:hover {
     background: var(--black); }
@@ -1132,8 +1135,10 @@ input[type="radio"].visually-hidden {
     background: var(--text-red-active); }
   @media (min-width: 1290px) {
     .footer-contacts__button {
+      height: 52px;
       margin: 0;
       margin-left: 10px;
+      padding-block: 19px;
       grid-column: 5 / -1;
       grid-row: 1 / 2; } }
 

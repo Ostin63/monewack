@@ -14,6 +14,7 @@
   --text-red-hover: #db283d;
   --text-red-active: #8f1926;
   --color-black: #212121;
+  --border: #404040;
 }
 
 *,
@@ -25,10 +26,24 @@
 $tablet-width: 768px;
 $desktop-width: 1290px;
 
-$font-graphik: "Graphik", "Arial", sans-serif;
-$font-golos: "Golos", "Arial", sans-serif;
-$font-golosmedium: "Golosmedium", "Arial", sans-serif;
-$font-akzidenzGrotesk: "AkzidenzGrotesk", "Arial", sans-serif;
-$font-akzidenzGroteskmd: "AkzidenzGroteskMd", "Arial", sans-serif;
-$font-roadradio: "RoadRadio", "Arial", sans-serif;
-$font-inter: "Inter", "Arial", sans-serif;
+$font-graphik: "Graphik",
+"Arial",
+sans-serif;
+$font-golos: "Golos",
+"Arial",
+sans-serif;
+$font-golosmedium: "Golosmedium",
+"Arial",
+sans-serif;
+$font-akzidenzGrotesk: "AkzidenzGrotesk",
+"Arial",
+sans-serif;
+$font-akzidenzGroteskmd: "AkzidenzGroteskMd",
+"Arial",
+sans-serif;
+$font-roadradio: "RoadRadio",
+"Arial",
+sans-serif;
+$font-inter: "Inter",
+"Arial",
+sans-serif;
