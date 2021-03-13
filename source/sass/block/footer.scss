@@ -67,6 +67,7 @@
   max-width: 270px;
   @include list-style;
   margin-top: 15px;
+  margin-right: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -217,7 +218,7 @@
 
 .footer__copyright {
   margin: 0;
-  padding-block: 20px;
+  padding-block: 19px;
   padding-left: 15px;
   border-top: 1px solid var(--white-5);
   font-size: 13px;
@@ -235,6 +236,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-block: 23px;
     grid-column: 1 / 7;
     background: var(--black);
 

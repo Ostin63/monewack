@@ -1041,6 +1041,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   list-style: none;
   margin-top: 15px;
+  margin-right: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
@@ -1170,7 +1171,7 @@ input[type="radio"].visually-hidden {
 
 .footer__copyright {
   margin: 0;
-  padding-block: 20px;
+  padding-block: 19px;
   padding-left: 15px;
   border-top: 1px solid var(--white-5);
   font-size: 13px;
@@ -1185,6 +1186,7 @@ input[type="radio"].visually-hidden {
         padding-right: 120px; } }
   @media (min-width: 768px) {
     .footer__copyright {
+      padding-block: 23px;
       grid-column: 1 / 7;
       background: var(--black); }
       .footer__copyright p {
