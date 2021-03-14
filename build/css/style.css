@@ -364,12 +364,12 @@ input[type="radio"].visually-hidden {
   --black-ligth: #2A2A2E;
   --text-gray: #808080;
   --text-black: #262633;
+  --color-black: #212121;
+  --border: #404040;
   --text-red: #BF2738;
   --color-mail: #F23147;
   --text-red-hover: #db283d;
-  --text-red-active: #8f1926;
-  --color-black: #212121;
-  --border: #404040; }
+  --text-red-active: #8f1926; }
 
 *,
 *::before,
