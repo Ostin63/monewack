@@ -7,15 +7,17 @@
 }
 
 .footer-nav {
-  padding-top: 40px;
+  padding-top: 41px;
   padding-left: 15px;
-  padding-right: 32px;
+  padding-right: 10px;
   padding-bottom: 40px;
   background: var(--black);
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 7;
-    padding-right: 82px;
+    padding-top: 43px;
+    padding-right: 72px;
+    padding-bottom: 46px;
 
     ul {
       float: right;
@@ -33,18 +35,20 @@
 }
 
 .footer-catalog {
-  max-width: 270px;
+  max-width: 280px;
   @include list-style;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 10px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / 4;
-    margin-left: -105px;
   }
 }
 
 .footer-catalog__item {
   color: var(--white);
-  cursor: pointer;
 
   a {
     @include link;
@@ -64,18 +68,22 @@
 }
 
 .footer-nav__site {
-  max-width: 270px;
+  max-width: 280px;
   @include list-style;
   margin-top: 15px;
-  margin-right: 10px;
+  margin-right: 45px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 50px;
+    margin-right: 10px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 480px;
     grid-column: 2 / 6;
-    margin-left: -105px;
     justify-content: start;
 
     li {
@@ -101,8 +109,8 @@
 }
 
 .footer__contacts {
-  padding-top: 40px;
-  padding-bottom: 20px;
+  padding-top: 43px;
+  padding-bottom: 0;
   padding-inline: 15px;
   background: var(--black-ligth);
   color: var(--white);
@@ -156,7 +164,7 @@
   max-width: 190px;
   @include link;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   padding-block: 14px;
   text-align: center;
   border-radius: 14px;
@@ -193,6 +201,10 @@
   font-family: $font-akzidenzGroteskmd;
   color: var(--color-mail);
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+
   @media (min-width: $desktop-width) {
     display: block;
     margin-left: -15px;
@@ -205,12 +217,18 @@
 }
 
 .footer-contacts__adress {
-  margin-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 47px;
   font-size: 16px;
   line-height: 130%;
   font-family: $font-inter;
 
+  @media (min-width: $tablet-width) {
+    width: 290px;
+  }
+
   @media (min-width: $desktop-width) {
+    width: 450px;
     margin-block: 0;
     margin-left: -15px;
     grid-column: 2 / 6;

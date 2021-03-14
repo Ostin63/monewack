@@ -72,6 +72,8 @@
 
 .requisites__mail {
   @include link;
+  display: block;
+  margin-top: 25px;
   font-weight: normal;
   font-size: 25px;
   line-height: 30px;

@@ -96,6 +96,12 @@
   }
 }
 
+.item-block {
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--gray-dark);
+}
+
 .item-block__adress {
   font-size: 14px;
   line-height: 140%;
@@ -112,4 +118,10 @@
   &:active {
     color: var(--text-red-active);
   }
+}
+
+.list-item__mode {
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--text-black);
 }
