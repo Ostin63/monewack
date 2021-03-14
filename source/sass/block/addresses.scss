@@ -29,7 +29,6 @@
 
 .list-item {
   width: 100%;
-  max-width: 350px;
   height: 310px;
   margin-bottom: 10px;
   padding-top: 33px;
@@ -44,6 +43,7 @@
   background: var(--gray-ligth);
 
   @media (min-width: $tablet-width) {
+    max-width: 350px;
     margin: 0;
     padding-inline: 22px;
   }

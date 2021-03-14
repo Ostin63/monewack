@@ -915,7 +915,6 @@ input[type="radio"].visually-hidden {
 
 .list-item {
   width: 100%;
-  max-width: 350px;
   height: 310px;
   margin-bottom: 10px;
   padding-top: 33px;
@@ -930,6 +929,7 @@ input[type="radio"].visually-hidden {
   background: var(--gray-ligth); }
   @media (min-width: 768px) {
     .list-item {
+      max-width: 350px;
       margin: 0;
       padding-inline: 22px; } }
   @media (min-width: 1290px) {
