@@ -1052,6 +1052,9 @@ input[type="radio"].visually-hidden {
     color: var(--text-red); }
   .footer-catalog__item:hover {
     color: var(--white); }
+  @media (min-width: 1290px) {
+    .footer-catalog__item {
+      margin-left: -105px; } }
 
 .footer-nav__site {
   max-width: 280px;
@@ -1071,7 +1074,8 @@ input[type="radio"].visually-hidden {
     .footer-nav__site {
       width: 480px;
       grid-column: 2 / 6;
-      justify-content: start; }
+      justify-content: start;
+      margin-left: -105px; }
       .footer-nav__site li {
         margin-right: 10px; } }
 

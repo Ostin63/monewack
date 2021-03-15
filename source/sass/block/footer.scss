@@ -65,6 +65,10 @@
   &:hover {
     color: var(--white);
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -105px;
+  }
 }
 
 .footer-nav__site {
@@ -85,6 +89,7 @@
     width: 480px;
     grid-column: 2 / 6;
     justify-content: start;
+    margin-left: -105px;
 
     li {
       margin-right: 10px;
