@@ -116,7 +116,8 @@
 .footer__contacts {
   padding-top: 43px;
   padding-bottom: 0;
-  padding-inline: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   background: var(--black-ligth);
   color: var(--white);
   display: flex;
@@ -135,7 +136,8 @@
   @media (min-width: $desktop-width) {
     padding-top: 65px;
     padding-bottom: 55px;
-    padding-inline: 0;
+    padding-left: 0;
+    padding-right: 0;
     padding-right: 10px;
     display: grid;
     grid-template-columns: repeat(5, 80px) 1fr;
@@ -170,7 +172,8 @@
   @include link;
   margin-top: 20px;
   margin-bottom: 15px;
-  padding-block: 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   text-align: center;
   border-radius: 14px;
   font-size: 14px;
@@ -191,7 +194,8 @@
     height: 52px;
     margin: 0;
     margin-left: 10px;
-    padding-block: 19px;
+    padding-top: 19px;
+    padding-bottom: 19px;
     grid-column: 5 / -1;
     grid-row: 1 / 2;
   }
@@ -243,7 +247,8 @@
 
 .footer__copyright {
   margin: 0;
-  padding-block: 19px;
+  padding-top: 19px;
+  padding-bottom: 19px;
   padding-left: 15px;
   border-top: 1px solid var(--white-5);
   font-size: 13px;
@@ -261,7 +266,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-block: 23px;
+    padding-top: 23px;
+    padding-bottom: 23px;
     grid-column: 1 / 7;
     background: var(--black);
 
@@ -275,7 +281,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-block: 26px;
+    padding-top: 26px;
+    padding-bottom: 26px;
     padding-bottom: 27px;
   }
 }

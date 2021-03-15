@@ -32,7 +32,8 @@
   height: 310px;
   margin-bottom: 10px;
   padding-top: 33px;
-  padding-inline: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
   padding-bottom: 40px;
   border-radius: 20px;
   display: flex;
@@ -45,7 +46,8 @@
   @media (min-width: $tablet-width) {
     max-width: 350px;
     margin: 0;
-    padding-inline: 22px;
+    padding-left: 22px;
+    padding-right: 22px;
   }
 
   @media (min-width: $desktop-width) {

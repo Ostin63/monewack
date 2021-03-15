@@ -408,11 +408,13 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box; }
   @media (min-width: 768px) {
     .header-top {
-      padding-block: 14px;
+      padding-top: 14px;
+      padding-bottom: 14px;
       grid-template-columns: 1fr repeat(10, 50px) 1fr; } }
   @media (min-width: 1290px) {
     .header-top {
-      padding-block: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
       grid-template-columns: 1fr repeat(10, 80px) 1fr;
       grid-gap: 30px; } }
 
@@ -421,7 +423,8 @@ input[type="radio"].visually-hidden {
   height: 8px;
   display: block;
   border: none;
-  padding-inline: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
   background: url("../img/menu.svg") 50% 50% no-repeat;
   justify-self: center;
   align-self: center;
@@ -429,7 +432,8 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box; }
   @media (min-width: 768px) {
     .header-top__button {
-      padding-inline: 28px; } }
+      padding-left: 28px;
+      padding-right: 28px; } }
   @media (min-width: 1290px) {
     .header-top__button {
       width: 32px;
@@ -564,7 +568,8 @@ input[type="radio"].visually-hidden {
   @media (min-width: 768px) {
     .header-top__contact {
       display: block;
-      padding-inline: 28px;
+      padding-left: 28px;
+      padding-right: 28px;
       grid-column: 10 / -1; }
       .header-top__contact a {
         text-decoration: none; }
@@ -636,7 +641,8 @@ input[type="radio"].visually-hidden {
   line-height: 14px;
   font-family: "RoadRadio", "Arial", sans-serif;
   text-align: center;
-  padding-block: 19px;
+  padding-top: 19px;
+  padding-bottom: 19px;
   display: none; }
   @media (min-width: 1290px) {
     .header-top__request {
@@ -649,7 +655,8 @@ input[type="radio"].visually-hidden {
 
 .main-contacts__title {
   margin: 0;
-  padding-block: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
   background: var(--gray-ligth);
   font-weight: normal;
@@ -658,7 +665,8 @@ input[type="radio"].visually-hidden {
   font-family: "RoadRadio", "Arial", sans-serif; }
   @media (min-width: 768px) {
     .main-contacts__title {
-      padding-block: 15px;
+      padding-top: 15px;
+      padding-bottom: 15px;
       font-size: 32px;
       line-height: 100%; } }
   @media (min-width: 1290px) {
@@ -777,7 +785,8 @@ input[type="radio"].visually-hidden {
 .main-feedback__form input,
 .main-feedback__form textarea {
   width: 100%;
-  padding-block: 21px;
+  padding-top: 21px;
+  padding-bottom: 21px;
   padding-left: 20px;
   margin-bottom: 10px;
   background: var(--gray-ligth);
@@ -918,7 +927,8 @@ input[type="radio"].visually-hidden {
   height: 310px;
   margin-bottom: 10px;
   padding-top: 33px;
-  padding-inline: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
   padding-bottom: 40px;
   border-radius: 20px;
   display: flex;
@@ -931,7 +941,8 @@ input[type="radio"].visually-hidden {
     .list-item {
       max-width: 350px;
       margin: 0;
-      padding-inline: 22px; } }
+      padding-left: 22px;
+      padding-right: 22px; } }
   @media (min-width: 1290px) {
     .list-item {
       max-width: 300px; } }
@@ -1095,7 +1106,8 @@ input[type="radio"].visually-hidden {
 .footer__contacts {
   padding-top: 43px;
   padding-bottom: 0;
-  padding-inline: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   background: var(--black-ligth);
   color: var(--white);
   display: flex;
@@ -1111,7 +1123,8 @@ input[type="radio"].visually-hidden {
     .footer__contacts {
       padding-top: 65px;
       padding-bottom: 55px;
-      padding-inline: 0;
+      padding-left: 0;
+      padding-right: 0;
       padding-right: 10px;
       display: grid;
       grid-template-columns: repeat(5, 80px) 1fr;
@@ -1143,7 +1156,8 @@ input[type="radio"].visually-hidden {
   color: inherit;
   margin-top: 20px;
   margin-bottom: 15px;
-  padding-block: 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   text-align: center;
   border-radius: 14px;
   font-size: 14px;
@@ -1160,7 +1174,8 @@ input[type="radio"].visually-hidden {
       height: 52px;
       margin: 0;
       margin-left: 10px;
-      padding-block: 19px;
+      padding-top: 19px;
+      padding-bottom: 19px;
       grid-column: 5 / -1;
       grid-row: 1 / 2; } }
 
@@ -1206,7 +1221,8 @@ input[type="radio"].visually-hidden {
 
 .footer__copyright {
   margin: 0;
-  padding-block: 19px;
+  padding-top: 19px;
+  padding-bottom: 19px;
   padding-left: 15px;
   border-top: 1px solid var(--white-5);
   font-size: 13px;
@@ -1221,7 +1237,8 @@ input[type="radio"].visually-hidden {
         padding-right: 120px; } }
   @media (min-width: 768px) {
     .footer__copyright {
-      padding-block: 23px;
+      padding-top: 23px;
+      padding-bottom: 23px;
       grid-column: 1 / 7;
       background: var(--black); }
       .footer__copyright p {
@@ -1231,7 +1248,8 @@ input[type="radio"].visually-hidden {
         padding-right: 390px; } }
   @media (min-width: 1290px) {
     .footer__copyright {
-      padding-block: 26px;
+      padding-top: 26px;
+      padding-bottom: 26px;
       padding-bottom: 27px; } }
 
 @media (min-width: 768px) {

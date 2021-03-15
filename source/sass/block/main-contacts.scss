@@ -1,6 +1,7 @@
 .main-contacts__title {
   margin: 0;
-  padding-block: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
   background: var(--gray-ligth);
   font-weight: normal;
@@ -9,7 +10,8 @@
   font-family: $font-roadradio;
 
   @media (min-width: $tablet-width) {
-    padding-block: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-size: 32px;
     line-height: 100%;
   }
@@ -148,7 +150,8 @@
   input,
   textarea {
     width: 100%;
-    padding-block: 21px;
+    padding-top: 21px;
+    padding-bottom: 21px;
     padding-left: 20px;
     margin-bottom: 10px;
     background: var(--gray-ligth);
