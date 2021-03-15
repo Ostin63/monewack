@@ -1164,6 +1164,7 @@ input[type="radio"].visually-hidden {
   line-height: 14px;
   font-family: "RoadRadio", "Arial", sans-serif;
   border: 2px solid var(--border);
+  background: var(--black-ligth);
   box-sizing: border-box; }
   .footer-contacts__button:hover {
     background: var(--black); }
