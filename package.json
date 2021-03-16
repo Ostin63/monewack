@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build":"npx gulp build",
+    "start": "npx gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -29,8 +31,8 @@
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify-es": "^2.0.0",
-    "postcss-csso": "^5.0.0",
-    "uglify": "^0.1.5"
+    "postcss": "^8.2.8",
+    "postcss-csso": "^5.0.0"
   },
   "browserslist": [
     "last 2 versions",
